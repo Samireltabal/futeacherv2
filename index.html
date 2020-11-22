@@ -11,20 +11,90 @@
   <body>
     <div class="uk-container-fluid">
       <div class="uk-card uk-card-body uk-card-primary">
-          
-        <h3 class="uk-card-title">عنوان رئيسي</h3>  
-         <p id="tester"></p>
-          
+        <div uk-grid>
+          <div>
+          <h3 class="uk-card-title">عنوان رئيسي</h3>  
+          </div>
+          <div>
+          <p id="tester"></p>
+          <p id="streamName"></p>
+          </div>
+          <div>
           <button class="uk-button uk-button-default"  uk-icon="icon: heart" uk-tooltip="title: Hello World"> شاهد  </button>
           <span class="uk-margin-small-right" uk-icon="check"></span>
           <a href="" uk-icon="heart"></a>
-
+          </div>
+        </div>
       </div>
-      <div class="uk-flex-center" uk-grid>
+      <div class="uk-flex-center" uk-grid="masonry: true">
           <div id="loading" class="uk-margin-xlarge-top"><span uk-spinner="ratio: 4.5"></span></div>
-          <div id="content" class="uk-margin-xlarge-top"></div>
+          <div id="content" class="uk-grid-small uk-child-width-1-4@m uk-flex-center uk-text-center" style="display: none;" uk-grid>
+            <div class="uk-width-3-4@m">
+              <div id="players" class="uk-grid-collapse uk-child-width-1-4@m" uk-grid>
+                <div>
+                  <div class="uk-inline uk-light">
+                    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" loop muted autoplay playsinline></video>
+                    <div class="uk-position-center">
+                        <span uk-overlay-icon></span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-inline uk-light">
+                    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" loop muted autoplay playsinline></video>
+                    <div class="uk-position-bottom">
+                        <span uk-overlay-icon></span>
+                        <span uk-overlay-icon></span>
+                        <span uk-overlay-icon></span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-inline uk-light">
+                    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" loop muted autoplay playsinline></video>
+                    <div class="uk-position-center">
+                        <span uk-overlay-icon></span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-inline uk-light">
+                    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" loop muted autoplay playsinline></video>
+                    <div class="uk-position-center">
+                        <span uk-overlay-icon></span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-inline uk-light">
+                    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" loop muted autoplay playsinline></video>
+                    <div class="uk-position-center">
+                        <span uk-overlay-icon></span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="uk-inline uk-light">
+                    <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" loop muted autoplay playsinline></video>
+                    <div class="uk-position-center">
+                        <span uk-overlay-icon></span>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="uk-width-1-4@m">
+              <h1>Chat </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quo repellat obcaecati error itaque autem saepe sed in! Deleniti obcaecati tenetur adipisci iste dolor odio voluptatibus incidunt praesentium repellat minima!
+              </p>
+            </div>
+          </div>
       </div>
     </div>
     <script type="module" src="/bundle.js"></script>
+
   </body>
 </html>

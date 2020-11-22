@@ -3,4 +3,17 @@
 h1 {
     text-align: center;
     color: red;
-  }
+}
+.uk-card-body {
+  padding: 15px 30px;
+}
+.video_box {
+  display: inline-block;
+  background-color: #000;
+}
+.video_overlays {
+  position: relative;;
+  float:left;
+  text-align: center;
+  z-index:300000;
+}
